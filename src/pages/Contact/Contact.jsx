@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, Phone, MapPin, Mail } from "lucide-react";
+import { Send, MapPin, Mail } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -43,7 +43,50 @@ export default function Contact() {
     return isValid;
   };
 
-  const handleSubmit = async (e) => {
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   if (!validateForm()) {
+  //     setStatus("Please fill in all required fields correctly.");
+  //     return;
+  //   }
+
+  //   // Create a new FormData object to send to Web3Forms API
+  //   const form = new FormData();
+  //   form.append("access_key", "90f4b8af-e590-42b0-beaf-10b18f66a703"); // Replace with your Web3Forms access key
+  //   form.append("name", formData.name);
+  //   form.append("email", formData.email);
+  //   form.append("subject", formData.subject || "New Contact Form Submission");
+  //   form.append("message", formData.message);
+
+  //   try {
+  //     // Send form data to Web3Forms API
+  //     const response = await fetch("https://api.web3forms.com/submit", {
+  //       method: "POST",
+  //       body: form,
+  //     });
+
+  //     const result = await response.json();
+
+  //     if (response.ok) {
+  //       setStatus("Message sent successfully!");
+  //       setFormData({
+  //         name: "",
+  //         email: "",
+  //         subject: "",
+  //         message: "",
+  //       });
+  //       setErrors({});
+  //     } else {
+  //       setStatus(result.message || "There was an error sending your message.");
+  //     }
+  //   } catch (error) {
+  //     setStatus("An error occurred. Please try again.");
+  //     console.error("Error:", error);
+  //   }
+  // };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!validateForm()) {
@@ -51,46 +94,21 @@ export default function Contact() {
       return;
     }
 
-    // Create a new FormData object to send to Web3Forms API
-    const form = new FormData();
-    form.append("access_key", "90f4b8af-e590-42b0-beaf-10b18f66a703"); // Replace with your Web3Forms access key
-    form.append("name", formData.name);
-    form.append("email", formData.email);
-    form.append("subject", formData.subject || "New Contact Form Submission");
-    form.append("message", formData.message);
+    // Temporary local submission
+    console.log("Form data submitted:", formData);
 
-    try {
-      // Send form data to Web3Forms API
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: form,
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        setStatus("Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-        setErrors({});
-      } else {
-        setStatus(result.message || "There was an error sending your message.");
-      }
-    } catch (error) {
-      setStatus("An error occurred. Please try again.");
-      console.error("Error:", error);
-    }
+    setStatus("Message sent successfully!");
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+    setErrors({});
   };
 
   return (
-    <main
-      className="pt-20 lg:pt-[0rem] bg-[#04081A]
- text-white min-h-screen"
-    >
+    <main className="pt-20 lg:pt-[0rem] bg-[#04081A] text-white min-h-screen">
       <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -112,7 +130,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">olovajs@gmail.com</p>
+                    <p className="text-gray-400">krishsin2254@gmail.com</p>
                   </div>
                 </div>
 
@@ -122,7 +140,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Laxmipure, Natore 6400</p>
+                    <p className="text-gray-400">Nagpur, Maharashtra</p>
                   </div>
                 </div>
               </div>
