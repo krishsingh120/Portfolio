@@ -42,35 +42,64 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
-    "Full-Stack Developer & UI/UX Enthusiast",
-    "JavaScript Developer & Creator of Olova.js",
-    "Learning MARN Stack",
-    "Linux & GitHub for DevOps Enthusiast",
+    "Full-Stack Developer | MERN & EJS Stack",
+    "Backend Engineer | REST APIs, Microservices, Kafka",
+    "Frontend Developer | React.js, Redux Toolkit, GSAP",
+    "AWS Cloud & DevOps Enthusiast | Docker, CI/CD, Kubernetes",
+    "Lead Developer | E-Summit IIIT Nagpur",
   ];
+
+  //   const [code] = useState(`
+  // const profile = {
+  //     name: 'Krish Singh',
+  //     title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
+  //     skills: [
+  //         'React', 'NextJS', 'Redux', 'Express',
+  //         'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
+  //         'GraphQL', 'Git', 'Linux', 'Discord Development'
+  //     ],
+  //     hardWorker: true,
+  //     quickLearner: true,
+  //     problemSolver: true,
+  //     yearsOfExperience: 4,
+  //     hireable: function() {
+  //         return (
+  //             this.hardWorker &&
+  //             this.problemSolver &&
+  //             this.skills.length >= 5 &&
+  //             this.yearsOfExperience >= 3
+  //         );
+  //     }
+  // };
+  //   `);
 
   const [code] = useState(`
 const profile = {
     name: 'Krish Singh',
-    title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
+    title: 'Full-Stack Developer | DevOps & Cloud Enthusiast | 4x-Hackathon Winner',
+    education: 'B.Tech in ECE (IoT), IIIT Nagpur',
     skills: [
-        'React', 'NextJS', 'Redux', 'Express',
-        'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
-        'GraphQL', 'Git', 'Linux', 'Discord Development'
+        'JavaScript', 'TypeScript', 'React.js', 'Redux Toolkit', 'GSAP',
+        'Node.js', 'Express.js', 'REST APIs', 'Microservices', 
+        'MongoDB', 'MySQL', 'Redis',
+        'AWS', 'Docker', 'Kubernetes', 'CI/CD Pipelines',
+        'Kafka', 'RabbitMQ', 'Git', 'Linux'
     ],
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 4, 
+    yearsOfExperience: 2,
     hireable: function() {
         return (
             this.hardWorker &&
             this.problemSolver &&
-            this.skills.length >= 5 &&
-            this.yearsOfExperience >= 3
+            this.quickLearner &&
+            this.skills.length >= 10 &&
+            this.yearsOfExperience >= 2
         );
     }
 };
-  `);
+`);
 
   useEffect(() => {
     Prism.highlightAll();
@@ -211,7 +240,7 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript lover 🚀 | OlovaJS creator 🔧 | Crafting frameworks
+                  Full-Stack Developer 🚀 | Cloud & DevOps Enthusiast ☁️ | Building Scalable Web Solutions 💻✨
                   and coding the future 💻✨
                 </p>
               </div>
@@ -233,7 +262,7 @@ const profile = {
 
                 {/* Contact Button */}
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/1MutrbED5clj-VxZCqGHP6O8t3_eZgE9U/view?usp=drive_link"
                   className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">

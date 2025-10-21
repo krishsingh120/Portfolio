@@ -14,7 +14,7 @@ import {
   FaAws,
 } from "react-icons/fa";
 import {
-  SiNextdotjs,
+  SiJavascript,
   SiTypescript,
   SiTailwindcss,
   SiPostgresql,
@@ -72,10 +72,7 @@ const SkillsSection = () => {
       color: "text-blue-400",
       skills: [
         { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
-        {
-          name: "Next.js",
-          icon: <SiNextdotjs className="w-4 h-4 text-white" />,
-        },
+        { name: "JavaScript", icon: <SiJavascript className="w-4 h-4 text-[#F7DF1E]" /> },
         {
           name: "TypeScript",
           icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" />,
