@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary } from "lucide-react";
+import { Code2, Activity, Cpu, Layers, Network, Binary, Paintbrush } from "lucide-react";
 
 const ExperienceCard = ({
   title,
@@ -52,30 +52,61 @@ const ExperienceCard = ({
 );
 
 const ExperienceSection = () => {
+  // const experiences = [
+  //   {
+  //     icon: Network,
+  //     title: "WordPress Developer",
+  //     company: "Fiverr",
+  //     period: "2019 - 2020",
+  //     description:
+  //       "Worked on developing and customizing WordPress websites for clients globally.",
+  //   },
+  //   {
+  //     icon: Layers,
+  //     title: "Junior Frontend Developer",
+  //     company: "Sera Programmer",
+  //     period: "2021 - 2023",
+  //     description:
+  //       "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
+  //   },
+  //   {
+  //     icon: Code2,
+  //     title: "JavaScript Developer",
+  //     company: "OlovJS (Sera Programmer)",
+  //     period: "2023 - Present",
+  //     description:
+  //       "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+  //   },
+  // ];
+
   const experiences = [
     {
-      icon: Network,
-      title: "WordPress Developer",
-      company: "Fiverr",
-      period: "2019 - 2020",
+      icon: Code2,
+      title: "Full-Stack Developer – Official IIIT Nagpur Website",
+      period: "Feb 2025 – Apr 2025",
       description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
+        "Developed the complete official IIIT Nagpur website using EJS, Node.js, Express.js, and MongoDB. Built RESTful APIs, dynamic routing, and an admin panel for content management. Integrated server-side rendering with EJS for faster load times and deployed the application on AWS for scalability and security.",
     },
     {
       icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
-      period: "2021 - 2023",
+      title: "Backend & Microservices Developer – Airline Management System",
+      period: "Aug 2025 – Oct 2025",
       description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
+        "Built a scalable microservices-based backend using Node.js, Express.js, and MySQL. Implemented real-time flight search, booking, and cancellation workflows with secure payments and refunds. Deployed the system on AWS EC2 with load balancing to handle 5000+ daily bookings.",
     },
     {
-      icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
-      period: "2023 - Present",
+      icon: Network,
+      title: "Web Development Lead – E-Summit, E-Cell IIIT Nagpur",
+      period: "2025",
       description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Led the web development team for E-Summit 2025, managing full-stack design and deployment. Mentored developers on GSAP animations, frontend integration, and backend coordination to ensure seamless user experience.",
+    },
+    {
+      icon: Paintbrush,
+      title: "Frontend Contributor – Tantrafiesta (Tech Fest)",
+      period: "2024 – 2025",
+      description:
+        "Contributed to the official tech-fest website using React.js and GSAP. Focused on building responsive layouts, smooth scroll animations, and interactive UI features to enhance engagement and visual appeal.",
     },
   ];
 
