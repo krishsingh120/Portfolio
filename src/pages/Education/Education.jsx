@@ -13,26 +13,52 @@ import { motion } from "framer-motion";
 const EducationSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  // const educationData = [
+  //   {
+  //     degree: "Secondary School Certificate (SSC)",
+  //     school: "Natore Textile Institute",
+  //     mascot: "📘",
+  //     year: "2019-2021",
+  //     achievements: ["GPA: 4.89", "Subject: Science"],
+  //     skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+  //     description:
+  //       "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+  //   },
+  //   {
+  //     degree: "Higher Secondary Certificate (HSC)",
+  //     school: "Dottopara Model Degree College",
+  //     mascot: "📗",
+  //     year: "2021-2023",
+  //     achievements: ["GPA: 4.25", "Subject: Arts"],
+  //     skills: ["Literature", "Social Studies", "Economics", "History"],
+  //     description:
+  //       "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+  //   },
+  // ];
+
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
+      degree: "Secondary School Certificate (Class X)",
+      school: "Kendriya Vidyalaya, IVRI, Izzatnagar, Bareilly",
       mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      year: "2019 – 2020",
+      achievements: ["Percentage: 85%", "Board: CBSE"],
+      skills: ["Mathematics", "Science", "English", "Social Science"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+        "Completed Class 10 with a strong academic foundation, focusing on mathematics and science fundamentals.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
+      degree: "Senior Secondary Certificate (Class XII)",
+      school: "Kendriya Vidyalaya, IVRI, Izzatnagar, Bareilly",
       mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      year: "2021 – 2022",
+      achievements: [
+        "Percentage: 82%",
+        "Stream: PCM (Physics, Chemistry, Mathematics)",
+      ],
+      skills: ["Physics", "Chemistry", "Mathematics"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Focused on the PCM stream, developing analytical and problem-solving skills through rigorous coursework in core science subjects.",
     },
   ];
 
