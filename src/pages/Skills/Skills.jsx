@@ -136,18 +136,6 @@ const SkillsSection = () => {
       ],
     },
     {
-      icon: Layout,
-      title: "UI/UX Design",
-      color: "text-purple-400",
-      skills: [
-        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
-        {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
-        },
-      ],
-    },
-    {
       icon: Cloud,
       title: "Cloud & DevOps",
       color: "text-orange-400",
@@ -180,6 +168,7 @@ const SkillsSection = () => {
           name: "Webpack",
           icon: <SiWebpack className="w-4 h-4 text-[#8DD6F9]" />,
         },
+        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
         { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
         {
           name: "Postman",

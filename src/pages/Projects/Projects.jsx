@@ -3,47 +3,91 @@ import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
+// const projects = [
+//   {
+//     title: "Olova! A Lightweight JavaScript Library",
+//     description:
+//       "A lightweight JavaScript library for creating beautiful, responsive UI components.",
+//     src: "rock.jpg",
+//     link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+//     color: "#5196fd",
+//     githubLink: "https://github.com/olovajs/olova",
+//     liveLink: "https://olova.js.org/",
+//   },
+//   {
+//     title: "A sleek portfolio built with React and Tailwind CSS ",
+//     description:
+//       "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
+//     src: "tree.jpg",
+//     link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+//     color: "#8f89ff",
+//     githubLink: "https://github.com/seraprogrammer/portfolio",
+//     liveLink: "https://codervai.vercel.app",
+//   },
+//   {
+//     title: "🚀 CodeWhisperer",
+//     description:
+//       "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
+//     src: "water.jpg",
+//     link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
+//     color: "#fff",
+//     githubLink: "https://github.com/seraprogrammer/codewhisperer",
+//     liveLink: "https://codewhisperer.vercel.app/",
+//   },
+//   {
+//     title: "CodeKori 🔥",
+//     description:
+//       "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
+//     src: "house.jpg",
+//     link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
+//     color: "#ed649e",
+//     githubLink: "https://github.com/seraprogrammer/CodeKori",
+//     liveLink: "https://codekori.js.org",
+//   },
+// ];
+
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
+    title: "🛍️ Scatch – Online Bag Selling Platform",
     description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
-    src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+      "A full-stack e-commerce web application built using Node.js, Express.js, MongoDB, and EJS. Features secure authentication, product CRUD operations, and image uploads via Multer.js. Deployed on Render with optimized backend APIs.",
+    src: "scatch.jpg",
+    link: "https://i.postimg.cc/RFHrLXVd/Scatch.png",
     color: "#5196fd",
-    githubLink: "https://github.com/olovajs/olova",
-    liveLink: "https://olova.js.org/",
+    githubLink: "https://github.com/kakusingh120/Scatch.git",
+    liveLink: "https://scatch-j4jn.onrender.com/",
   },
   {
-    title: "A sleek portfolio built with React and Tailwind CSS ",
+    title: "✈️ Airline Management System – Microservices Backend",
     description:
-      "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
-    src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+      "A scalable backend system designed with Node.js, Express.js, and MySQL following a microservices architecture. Supports real-time flight search, booking, and cancellations with AWS EC2 deployment and load balancing.",
+    src: "airline.jpg",
+    link: "https://i.postimg.cc/wjvCgVJd/AirlineManagementSystem.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    githubLink: "https://github.com/kakusingh120/AirlineManagementSystem.git",
+    liveLink: "",
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "🌐 Portfolio Website",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
+      "A personal portfolio built with React.js and Tailwind CSS to showcase projects, skills, and achievements. Features modern animations, responsive design, and clean UI components.",
+    src: "portfolio.jpg",
+    link: "https://i.postimg.cc/YSXgzzyL/Portfolio-Img.png",
     color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
-    liveLink: "https://codewhisperer.vercel.app/",
+    githubLink: "https://github.com/kakusingh120/Portfolio.git",
+    liveLink: "https://your-portfolio-link.vercel.app/",
   },
   {
-    title: "CodeKori 🔥",
+    title: "💻 ExceHub – Code Execution Platform",
     description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
+      "A microservices-based code execution platform inspired by LeetCode and Codeforces. Includes scalable APIs for problem management, code execution, and user submissions using Node.js, Express.js, Kafka, and MongoDB.",
+    src: "execode.jpg",
+    link: "https://i.postimg.cc/Yqxx6Mwy/ExecHub.png",
     color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
-    liveLink: "https://codekori.js.org",
+    githubLink: "https://github.com/kakusingh120/ExceHub-Problem-Service.git",
+    liveLink: "",
   },
+  
 ];
 
 export default function Projects() {
