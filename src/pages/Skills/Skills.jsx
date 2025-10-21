@@ -14,6 +14,12 @@ import {
   FaAws,
 } from "react-icons/fa";
 import {
+  SiMysql,
+  SiRabbitmq,
+  SiFastify,
+  SiExpress,
+  SiLeetcode,
+  SiPostman,
   SiJavascript,
   SiTypescript,
   SiTailwindcss,
@@ -72,7 +78,10 @@ const SkillsSection = () => {
       color: "text-blue-400",
       skills: [
         { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
-        { name: "JavaScript", icon: <SiJavascript className="w-4 h-4 text-[#F7DF1E]" /> },
+        {
+          name: "JavaScript",
+          icon: <SiJavascript className="w-4 h-4 text-[#F7DF1E]" />,
+        },
         {
           name: "TypeScript",
           icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" />,
@@ -101,24 +110,28 @@ const SkillsSection = () => {
           icon: <FaNodeJs className="w-4 h-4 text-[#339933]" />,
         },
         {
-          name: "Python",
-          icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
+          name: "Express.js",
+          icon: <SiJavascript className="w-4 h-4 text-[#000000]" />, // Optional: use another icon if you prefer
         },
         {
-          name: "PostgreSQL",
-          icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
+          name: "Fastify",
+          icon: <SiJavascript className="w-4 h-4 text-[#000000]" />, // Replace with a Fastify icon if you have one
+        },
+        {
+          name: "MySQL",
+          icon: <SiJavascript className="w-4 h-4 text-[#4479A1]" />, // Consider SiMysql if available
         },
         {
           name: "MongoDB",
           icon: <SiMongodb className="w-4 h-4 text-[#47A248]" />,
         },
         {
-          name: "REST APIs",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
+          name: "RabbitMQ",
+          icon: <SiJavascript className="w-4 h-4 text-[#FF6600]" />, // Replace with RabbitMQ icon if available
         },
         {
-          name: "GraphQL",
-          icon: <SiGraphql className="w-4 h-4 text-[#E10098]" />,
+          name: "REST APIs",
+          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
         },
       ],
     },
@@ -131,14 +144,6 @@ const SkillsSection = () => {
         {
           name: "Responsive Design",
           icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
-        },
-        {
-          name: "Wireframing",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
-        },
-        {
-          name: "Prototyping",
-          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
         },
       ],
     },
@@ -177,33 +182,23 @@ const SkillsSection = () => {
         },
         { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
         {
-          name: "Firebase",
-          icon: <SiFirebase className="w-4 h-4 text-[#FFCA28]" />,
+          name: "Postman",
+          icon: <SiPostman className="w-4 h-4 text-[#FF6C37]" />,
         },
-        { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
-        { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
       ],
     },
     {
-      icon: Paintbrush,
-      title: "Creative Skills",
+      icon: Cpu,
+      title: "Problem Solving & DSA",
       color: "text-yellow-400",
       skills: [
         {
-          name: "UI Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
+          name: "LeetCode",
+          icon: <SiLeetcode className="w-4 h-4 text-[#FFA116]" />,
         },
         {
-          name: "SVG Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
-        },
-        {
-          name: "3D Modeling",
+          name: "Data Structures & Algorithms",
           icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
-        },
-        {
-          name: "Motion Graphics",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
         },
       ],
     },
