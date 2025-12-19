@@ -38,22 +38,6 @@ jobs:
       - name: Deploy to Vercel
         if: github.ref == 'refs/heads/main'
         run: |
-          npx vercel pull \
-            --yes \
-            --environment=production \
-            --scope=${{ secrets.VERCEL_ORG_ID }} \
-            --project=${{ secrets.VERCEL_PROJECT_ID }} \
-            --token=${{ secrets.VERCEL_TOKEN }}
-
-          npx vercel build \
-            --prod \
-            --scope=${{ secrets.VERCEL_ORG_ID }} \
-            --project=${{ secrets.VERCEL_PROJECT_ID }} \
-            --token=${{ secrets.VERCEL_TOKEN }}
-
-          npx vercel deploy \
-            --prebuilt \
-            --prod \
-            --scope=${{ secrets.VERCEL_ORG_ID }} \
-            --project=${{ secrets.VERCEL_PROJECT_ID }} \
-            --token=${{ secrets.VERCEL_TOKEN }}
+          npx vercel pull --yes --environment=production --scope=${{ secrets.VERCEL_ORG_ID }} --project=${{ secrets.VERCEL_PROJECT_ID }} --token=${{ secrets.VERCEL_TOKEN }}
+          npx vercel build --prod --scope=${{ secrets.VERCEL_ORG_ID }} --project=${{ secrets.VERCEL_PROJECT_ID }} --token=${{ secrets.VERCEL_TOKEN }}
+          npx vercel deploy --prebuilt --prod --scope=${{ secrets.VERCEL_ORG_ID }} --project=${{ secrets.VERCEL_PROJECT_ID }} --token=${{ secrets.VERCEL_TOKEN }}
