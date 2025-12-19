@@ -151,7 +151,7 @@ You will need to download **Git** and **Node** to run this project.
 2. After forking, open your terminal and run the following commands to clone the repo:
 
   ```bash
-  git clone https://github.com/kakusingh120/Portfolio.git
+  git clone https://github.com/krishsingh120/Portfolio.git
   ```
 Navigate to the Project Directory 📂
 Once the repository is cloned, change your directory to the project folder:
@@ -174,20 +174,13 @@ npm run dev
 View the Project 🌐
 Open your browser and visit http://localhost:5173/ to see the result! 🎉
 
-## 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+----
 
----
+## 👨‍💻 Author
 
-### 🤝 Contributing
+**Krish Singh**  
+Backend & Full-Stack Developer 🚀  
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-<div align="center"> Made with ❤️ by Krish Singh </div>
+[GitHub](https://github.com/krishsingh120) • 
+[LinkedIn](https://www.linkedin.com/in/krish-singh-9023b12a8/)
 
