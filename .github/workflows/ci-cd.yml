@@ -34,6 +34,8 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: |
           echo "TOKEN CHECK: ${VERCEL_TOKEN:+YES}"
-          npx vercel pull --yes --environment=production
-          npx vercel build --prod
-          npx vercel deploy --prebuilt --prod
+
+          VERCEL_TOKEN=$VERCEL_TOKEN npx vercel pull --yes --environment=production
+          VERCEL_TOKEN=$VERCEL_TOKEN npx vercel build --prod
+          VERCEL_TOKEN=$VERCEL_TOKEN npx vercel deploy --prebuilt --prod
+
