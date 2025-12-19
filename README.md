@@ -1,16 +1,22 @@
 # Portfolio Website
+
 <div align="center">
-  <pre>
+  <!-- <pre>
     _____           _    __      _ _       
    |  __ \         | |  / _|    | (_)      
    | |__) |__  _ __| |_| |_ ___ | |_  ___  
    |  ___/ _ \| '__| __|  _/ _ \| | |/ _ \ 
    | |  | (_) | |  | |_| || (_) | | | (_) |
    |_|   \___/|_|   \__|_| \___/|_|_|\___/ 
-  </pre>
+  </pre> -->
+
+  <pre>
+> PORTFOLIO
+> Selected Works & Projects
+</pre>
+
 </div>
 
- 
 Welcome to my **portfolio website**! This site showcases my skills, experience, education, projects, and how to get in touch with me. It's built with **React** and **Vite** for a fast, modern web experience. You can explore my work, learn about my journey, and contact me directly.
 
 ---
@@ -25,8 +31,11 @@ Welcome to my **portfolio website**! This site showcases my skills, experience, 
 
 Check out the live preview of the portfolio website here:  
 [**Live Demo**]()
+
 ---
+
 ### 🎯 Project Structure
+
 ```bash
 portfolio/
 ├── node_modules/
@@ -99,6 +108,7 @@ portfolio/
 │   └── vite.config.js
 
 ```
+
 ---
 
 ## Sections of the Portfolio
@@ -115,6 +125,7 @@ The portfolio website consists of the following sections:
 ---
 
 ## 💻 Technologies Used
+
 - **Frontend:** React.js with Vite
 - **Styling:** Tailwind CSS
 - **Animations:** Framer Motion
@@ -147,26 +158,31 @@ You will need to download **Git** and **Node** to run this project.
 # Getting Started 🎯
 
 ### Fork and Clone the Repository 🚀
+
 1. Click the **Fork** button at the top-right corner of the page to create your own copy of the repository.
 2. After forking, open your terminal and run the following commands to clone the repo:
 
-  ```bash
-  git clone https://github.com/krishsingh120/Portfolio.git
-  ```
+```bash
+git clone https://github.com/krishsingh120/Portfolio.git
+```
+
 Navigate to the Project Directory 📂
 Once the repository is cloned, change your directory to the project folder:
+
 ```bash
 cd portfolio
 ```
 
 Install Dependencies ⚙️
 From the root directory of your project, install the necessary packages:
+
 ```bash
 npm install
 ```
 
 Run the Development Server 🚀
 Start the development server to see your project live:
+
 ```bash
 npm run dev
 ```
@@ -174,13 +190,12 @@ npm run dev
 View the Project 🌐
 Open your browser and visit http://localhost:5173/ to see the result! 🎉
 
-----
+---
 
 ## 👨‍💻 Author
 
 **Krish Singh**  
-Backend & Full-Stack Developer 🚀  
+Backend & Full-Stack Developer 🚀
 
-[GitHub](https://github.com/krishsingh120) • 
+[GitHub](https://github.com/krishsingh120) •
 [LinkedIn](https://www.linkedin.com/in/krish-singh-9023b12a8/)
-
