@@ -48,16 +48,6 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "🛍️ Scatch – Online Bag Selling Platform",
-    description:
-      "A full-stack e-commerce web application built using Node.js, Express.js, MongoDB, and EJS. Features secure authentication, product CRUD operations, and image uploads via Multer.js. Deployed on Render with optimized backend APIs.",
-    src: "scatch.jpg",
-    link: "https://i.postimg.cc/RFHrLXVd/Scatch.png",
-    color: "#5196fd",
-    githubLink: "https://github.com/kakusingh120/Scatch.git",
-    liveLink: "https://scatch-j4jn.onrender.com/",
-  },
-  {
     title: "✈️ Airline Management System – Microservices Backend",
     description:
       "A scalable backend system designed with Node.js, Express.js, and MySQL following a microservices architecture. Supports real-time flight search, booking, and cancellations with AWS EC2 deployment and load balancing.",
@@ -78,16 +68,25 @@ const projects = [
     liveLink: "https://your-portfolio-link.vercel.app/",
   },
   {
+    title: "🛍️ Scatch – Online Bag Selling Platform",
+    description:
+      "A full-stack e-commerce web application built using Node.js, Express.js, MongoDB, and EJS. Features secure authentication, product CRUD operations, and image uploads via Multer.js. Deployed on Render with optimized backend APIs.",
+    src: "scatch.jpg",
+    link: "https://i.postimg.cc/RFHrLXVd/Scatch.png",
+    color: "#5196fd",
+    githubLink: "https://github.com/kakusingh120/Scatch.git",
+    liveLink: "https://scatch-j4jn.onrender.com/",
+  },
+  {
     title: "💻 ExceHub – Code Execution Platform",
     description:
       "A microservices-based code execution platform inspired by LeetCode and Codeforces. Includes scalable APIs for problem management, code execution, and user submissions using Node.js, Express.js, Kafka, and MongoDB.",
     src: "execode.jpg",
     link: "https://i.postimg.cc/Yqxx6Mwy/ExecHub.png",
     color: "#ed649e",
-    githubLink: "https://github.com/kakusingh120/ExceHub-Problem-Service.git",
+    githubLink: "https://github.com/krishsingh120/ExceHub-Coding-Platform",
     liveLink: "",
   },
-  
 ];
 
 export default function Projects() {
