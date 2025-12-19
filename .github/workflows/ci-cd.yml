@@ -5,37 +5,33 @@ on:
     branches: [main]
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
-      - name: Install dependencies
+      - name: Install deps
         run: npm ci
 
-      - name: Run ESLint
+      - name: Lint
         run: npm run lint
 
-      - name: Build project
+      - name: Build
         run: npm run build
 
       - name: Deploy to Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: |
-          echo "TOKEN CHECK: ${VERCEL_TOKEN:+YES}"
-
-          VERCEL_TOKEN=$VERCEL_TOKEN npx vercel pull --yes --environment=production
-          VERCEL_TOKEN=$VERCEL_TOKEN npx vercel build --prod
-          VERCEL_TOKEN=$VERCEL_TOKEN npx vercel deploy --prebuilt --prod
-
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: .
+          vercel-args: '--prod'
