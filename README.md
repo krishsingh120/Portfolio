@@ -34,7 +34,7 @@ Welcome to my **portfolio website**! This site showcases my skills, experience, 
 ## Live Preview
 
 Check out the live preview of the portfolio website here:  
-[**Live Demo**]()
+[**Live Demo**](https://krishsingh-portfolio.vercel.app/)
 
 ---
 
